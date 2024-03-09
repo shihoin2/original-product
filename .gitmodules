@@ -1,0 +1,3 @@
+[submodule "original-product"]
+	path = original-product
+	url = https://github.com/shihoin2/original-product.git
