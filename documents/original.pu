@@ -1,0 +1,63 @@
+@startuml original
+!include original.iuml
+
+entity users {
++ id [PK]
+==
+* name:string(100)
+* created_at:timestamps
+* updated_at:timestamps
+}
+
+entity products {
++ id [PK]
+==
+* name:string(200)
+* manufacturer:string(100)
+' 日本摂食嚥下リハビリテーション学会嚥下調整食分類2021
+* JDD2021_code:string(20)
+' 嚥下困難者用食品
+* FFPWD_code:string(20)
+* UDF_code:string(20)
+' スマイルケア食
+* SCF_code:string(20)
+* reviews_code:string(20)
+* created_at:timestamps
+* updated_at:timestamps
+}
+
+entity reviews {
++ id [PK]
+==
+* rating:integer
+* description:text
+# user_id [FK(users,id)]
+* created_at:timestamps
+* updated_at:timestamps
+}
+
+entity shops {
++ id [PK]
+==
+* name:string(200)
+* address:string(255)
+* latitude:float
+* longitude:float
+* created_at:timestamps
+* updated_at:timestamps
+}
+
+
+entity shops_products {
+# products_id [FK(products,id)]
+# shops_id [FK(shops,id)]
+* created_at:timestamps
+* updated_at:timestamps
+}
+
+products --o{ shops_products
+shops_products }o-- shops
+users --o{ reviews
+products --o{ reviews
+
+@enduml
