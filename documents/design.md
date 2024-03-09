@@ -15,7 +15,7 @@
 
 ### 4. テーブル定義書（もしくは ER 図）
 #### ER図
-![ER図](original.png)
+![ER図](image/original.png)
 
 #### テーブル定義書
 ##### usersテーブル
@@ -35,7 +35,7 @@
 * manufacture：製造元
 * reviews_id：商品に対するレビュー
 * JDD2021_code～SCF_code：商品がどの嚥下グレードに分類されているかコード内容は以下画像を参照
-    ![alt text](学会分類と他分類.png)
+    ![alt text](image/学会分類と他分類.png)
     テーブルでは下記のように省略
     * <a id = "JDD2021">JDD2021：日本摂食嚥下リハビリテーション学会嚥下調整食分類2021</a>
     * <a id = "FFPWD">FFPWD：嚥下困難者用食品</a>
@@ -160,4 +160,4 @@
 
 
 ### 5. システム構成図
-![システム構成図](original.drawio.png)
+![システム構成図](image/original.drawio.png)
