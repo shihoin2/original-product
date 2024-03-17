@@ -15,7 +15,65 @@
 
 ### 4. テーブル定義書（もしくは ER 図）
 #### ER図
+<details>
+<summary>PlantUML</summary>
 ![ER図](image/original.png)
+</details>
+
+```mermaid
+
+erDiagram
+    users ||--o{ reviews : has
+    reviews ||--|{ products : has
+    products ||--o{ shops_products : has
+    shops ||--o{ shops_products : has
+
+
+    users {
+        integer name PK
+        string name
+    }
+    reviews {
+        integer id PK
+        integer rating
+        text description
+        integer user_id FK
+        timestamp created_at
+        timestamp updated_at
+    }
+    products {
+        integer id PK
+        string name
+        string manufacturer
+        string JDD2021_code
+        string FFPWD_code
+        string UDF_code
+        string SCF_code
+        integer reviews_id
+        timestamp created_at
+        timestamp updated_at
+}
+
+    shops {
+        integer id PK
+        string name
+        string address
+        float latitude
+        float longitude
+        timestamp created_at
+        timestamp updated_at
+}
+
+    shops_products {
+        integer products_id FK
+        integer shops_id FK
+        timestamp created_at
+        timestamp updated_at
+}
+
+```
+
+
 
 #### テーブル定義書
 ##### usersテーブル
