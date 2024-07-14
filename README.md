@@ -1,6 +1,6 @@
 # もぐさぽ
 
-![メインビジュアル](/navi/documents/image/main.png)
+![メインビジュアル](documents/image/main.png)
 
 ## オリジナルプロダクトの URL
 
@@ -18,8 +18,8 @@
 他のサービス ([嚥下食.com](https://www.engesyoku.com/)、[摂食嚥下関連医療資源マップ](https://www.swallowing.link/restaurants)、[日本誤嚥性肺炎予防協会](https://j-appa.or.jp/) )
 とは違って、地図を元に具体的な販売店と取り扱い商品の情報を知ることが出来ます。また、自分自身が情報を投稿することが可能です。
 
-- **[テーマおよび要件定義](/navi/documents/RequirementDefinition.md)**
-- **[設計](/navi/documents/design.md)**
+- **[テーマおよび要件定義](documents/RequirementDefinition.md)**
+- **[設計](documents/design.md)**
 
 ## GitHub リポジトリ
 
