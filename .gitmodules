@@ -1,8 +1,0 @@
-[submodule "Front-OriginalProduct"]
-	path = Front-OriginalProduct
-	url = https://github.com/shihoin2/Front-OriginalProduct.git
-	branch = main
-[submodule "Back-OriginalProduct"]
-	path = Back-OriginalProduct
-	url = https://github.com/shihoin2/Back-OriginalProduct.git
-	branch = main
